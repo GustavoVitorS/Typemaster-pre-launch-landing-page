@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/css/main.css" />
+  <title>Frontend Mentor | Página de destino de pré-lançamento do Typemaster</title>
+</head>
+
+<body>
+  <header class="main-header container">
+    <a href="./index.html" aria-label="Typemaster homepage">
+      <img class="logo" src="./assets/shared/logo.svg" width="40" height="40" alt="" />
+    </a>
+    <a class="cta-btn cta-btn--secondary" href="#">Reserve agora
+    </a>
+  </header>
+  <main>
+    <section class="intro grid" aria-labelledby="intro-heading">
+      <div class="intro__main-content flow">
+        <h1 id="intro-heading" class="intro__heading">Typemaster<br />Teclado</h1>
+        <p class="intro__paragraph">
+          Melhore sua produtividade e jogos sem gastar muito.
+          Atualize para uma experiência de digitação mecânica de alta qualidade.
+        </p>
+        <div class="intro__pre-order">
+          <a class="cta-btn" href="#">Reserve agora
+          </a>
+          <p>Lançamento em 27/05</p>
+        </div>
+      </div>
+      <picture class="intro__image">
+        <source srcset="./assets/desktop/image-keyboard.jpg" media="(min-width: 1110px)" />
+        <source srcset="./assets/tablet/image-keyboard.jpg" media="(min-width: 768px)" />
+        <img src="./assets/mobile/image-keyboard.jpg" alt="Typemaster keyboard" />
+      </picture>
+    </section>
+    <section class="about grid" aria-labelledby="about-heading">
+      <picture class="about__first-image">
+        <source srcset="./assets/desktop/image-phone-and-keyboard.jpg" media="(min-width: 1110px)" />
+        <source srcset="./assets/tablet/image-phone-and-keyboard.jpg" media="(min-width: 768px)" />
+        <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="Typemaster keyboard" />
+      </picture>
+      <!--  <div class="about__second-image"></div> -->
+      <picture class="about__second-image">
+        <source srcset="./assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1110px)" />
+        <source srcset="./assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)" />
+        <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="Typemaster keyboard" />
+      </picture>
+      <h2 id="about-heading" class="about__heading">
+        Mecânico<br />Sem fio
+        <br />Teclado
+      </h2>
+      <p class="about__paragraph">
+        O teclado Typemaster possui construção de alto nível e design prático.
+        Oferece uma ampla variedade de interruptores e teclas, juntamente com
+        Conectividade sem fio.
+      </p>
+    </section>
+    <section class="features grid" aria-label="Features">
+      <div class="feature flow">
+        <div class="feature__icon">
+          <img src="./assets/shared/icon-compatible.svg" width="26" height="21" alt="" />
+        </div>
+        <h2 class="feature__title">Altamente <br />Compatível
+        </h2>
+        <p class="feature__paragraph">
+          Fácil de usar e funciona bem com todas as principais marcas de computadores, jogos
+          consoles e dispositivos móveis. Plug & play, sem instalação ou driver
+          precisava.
+        </p>
+      </div>
+      <div class="feature flow">
+        <div class="feature__icon">
+          <img src="./assets/shared/icon-bluetooth.svg" width="19" height="28" alt="" />
+        </div>
+        <h2 class="feature__title">
+          Sem fio
+          <br />com Bluetooth
+        </h2>
+        <p class="feature__paragraph">
+          A poderosa tecnologia RF 2.4G permite que você conecte o
+          teclado de até 30 pés de distância. Basta conectar o receptor unificador
+          em seu computador.
+        </p>
+      </div>
+      <div class="feature flow">
+        <div class="feature__icon">
+          <img src="./assets/shared/icon-battery.svg" width="32" height="21" alt="" />
+        </div>
+        <h2 class="feature__title">
+          Alta capacidade De
+          Bateria
+          <br />
+
+        </h2>
+        <p class="feature__paragraph">
+          Equipado com uma bateria interna de longa duração, você nunca precisará
+          gastar um centavo em substituíveis. Desfrute de 40 horas de uso
+          entre cobranças.
+        </p>
+      </div>
+      <div class="feature flow">
+        <div class="feature__icon">
+          <img src="./assets/shared/icon-light.svg" width="32" height="32" alt="" />
+        </div>
+        <h2 class="feature__title">
+          Retroiluminação RGB <br />
+          Modos
+        </h2>
+        <p class="feature__paragraph">
+          Escolha entre 4 níveis de brilho de luz de fundo e respiração ajustável
+          Rapidez. Cada tecla brilha intensamente no escuro e ajuda você a digitar
+          condições de pouca luz.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer container">
+    <p class="main-footer__copyright-notice">
+      <strong>Typemaster 2021</strong> | Todos os direitos reservados
+
+    </p>
+  </footer>
+</body>
+
+</html>

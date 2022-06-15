@@ -1,0 +1,26 @@
+@use "./mixins" as *;
+
+.grid {
+  --columns: 6;
+  --column-gap: 24px;
+  --side-gap: 24px;
+  --edge-column-width: calc(var(--side-gap) - var(--column-gap));
+  display: grid;
+  grid-template-columns: var(--edge-column-width) repeat(var(--columns), minmax(0px, 200px)) var(--edge-column-width);
+  column-gap: var(--column-gap);
+
+  @include bp-up("medium") {
+      --columns: 12;
+      --column-gap: 30px;
+      --side-gap: 39px;
+  }
+
+  @include bp-up("large") {
+     grid-template-columns: minmax(0, 1fr) repeat(var(--columns), minmax(0px, 65px)) minmax(0, 1fr);
+  
+  }
+
+  > * {
+    grid-column: 2 / calc(var(--columns) + 2);
+  }
+}

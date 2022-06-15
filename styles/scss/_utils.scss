@@ -1,0 +1,19 @@
+@use './mixins' as *;
+
+/* Container */
+
+.container {
+    --side-gap: 24px;
+    width: min(calc(100% - var(--side-gap) * 2), 1110px);
+    margin-inline: auto;
+
+    @include bp-up("medium") {
+        --side-gap: 39px;
+    }
+}
+
+/* Flow */
+
+.flow > * + * {
+    margin-top: var(--flow-space, 2rem);
+}
